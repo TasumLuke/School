@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu" class="fas fa-bars"></div>   
+
+    <a href="#" class="logo"><img src="icon.png" alt="icon">
+      </i>MEBO HIGHER SECONDARY SCHOOL</a>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#course">curriculum</a></li>
+            <li><a href="#admission">admission</a></li>
+            <li><a href="#Infrastructure">Infrastructure</a></li>
+            <li><a href="#calendar">calendar</a></li>
+            <li><a href="#Vacancy">Vacancy</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="login" class="fas fa-user-circle"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form  -->
+
+<div class="login-form">
+    <form id="login-form" method="post">
+        <h3>login</h3>
+        <input type="email" placeholder="username" class="box" name="username" required>
+        <input type="password" placeholder="password" class="box" name="password" required>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+        <input type="submit" class="btn" value="login">
+        <i class="fas fa-times"></i>
+    </form>
+
+    <form id="register-form" method="post" style="display: none;">
+        <h3>register</h3>
+        <input type="email" placeholder="username" class="box" name="username" required>
+        <input type="password" placeholder="password" class="box" name="password" required>
+        <input type="password" placeholder="confirm password" class="box" name="confirm_password" required>
+        <input type="submit" class="btn" value="register">
+        <i class="fas fa-times"></i>
+    </form>
+</div>
+
+
+<!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <h1>Mebo govt. Higher Secondary School</h1>
+        <p>Government of Arunachal Pradesh</p>
+        <a href="#about"><button class="btn">Welcome!</button></a>
+
+        <div class="shape"></div>
+
+    </section>
+
+    <script>
+        var homeElement = document.getElementById('home');
+        var images = ['image1.jpg', 'image2.jpg', 'image3.jpg'];
+        var currentImage = 0;
+
+        function changeBackground() {
+        homeElement.style.backgroundImage = `url(${images[currentImage]})`;
+        currentImage = (currentImage + 1) % images.length;
+        }
+
+        setInterval(changeBackground, 3000);
+    </script>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="images/arunachal.gif" alt="">
+    </div>
+
+    <div class="content">
+        <h3>History</h3>
+        <p>GOVT. HIGHER SECONDARY SCHOOL, MEBO was established in 1954 and it is managed by the Department of Education. It is located in Rural area. It is located 
+            in MEBO block of EAST SIANG district of Arunachal Pradesh. The school consists of Grades from 9 to 12. The school is Co-educational and it doesn't have 
+            an attached pre-primary section. The school is others in nature and is not using school building as a shift-school. N/A is the medium of instructions in 
+            this school. This school is approachable by all weather road. In this school academic session starts in April.</p>
+        <p>The school has Government building. It has got 0 classrooms for instructional purposes. All the classrooms are in good condition. 
+            It has 2 other rooms for non-teaching activities. The school has a separate room for Head master/Teacher. The school has Pucca boundary wall. 
+            The school has have electric connection. The source of Drinking Water in the school is Tap Water and it is functional. The school has 1 boys 
+            toilet and it is functional. and 1 girls toilet and it is functional. The school has no playground. The school has a library and has 1 books 
+            in its library. The school does not need ramp for disabled children to access classrooms.The school has no computers for teaching and learning purposes 
+            The school is not having a computer aided learning lab. The school is Not Applicable providing mid-day meal.</p>
+        <a href="#"><button class="btn">learn more</button></a>
+    </div>
+    
+
+</section>
+
+<!-- about section ends -->
+
+<!-- course section starts  -->
+
+<section class="course" id="course">
+
+<h1 class="heading">Curriculum</h1>    
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="images/class9.jpg" alt="">
+        <h3 class="price">9</h3>
+        <div class="content">
+            
+            <a href="#" class="title">Class 9</a>
+            <p>Information</p>
+            <div class="info">
+                <h3> <i class="far fa-clock"></i>  </h3>
+                <h3> <i class="far fa-calendar-alt"></i>  </h3>
+                <h3> <i class="fas fa-book"></i> CBSE </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/class10.jpg" alt="">
+        <h3 class="price">10</h3>
+        <div class="content">
+            
+            <a href="#" class="title">Class 10</a>
+            <p>Information</p>
+            <div class="info">
+                <h3> <i class="far fa-clock"></i>  </h3>
+                <h3> <i class="far fa-calendar-alt"></i>  </h3>
+                <h3> <i class="fas fa-book"></i>  </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/class11.webp" alt="">
+        <h3 class="price">11</h3>
+        <div class="content">
+            
+            <a href="#" class="title">Class 11</a>
+            <p>Information</p>
+            <div class="info">
+                <h3> <i class="far fa-clock"></i> </h3>
+                <h3> <i class="far fa-calendar-alt"></i> </h3>
+                <h3> <i class="fas fa-book"></i> </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/class12.jpg" alt="">
+        <h3 class="price">12</h3>
+        <div class="content">
+            
+            <a href="#" class="title">Class 12</a>
+            <p>Information</p>
+            <div class="info">
+                <h3> <i class="far fa-clock"></i> </h3>
+                <h3> <i class="far fa-calendar-alt"></i>  </h3>
+                <h3> <i class="fas fa-book"></i>  </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/circular.jpg" alt="">
+        <h3 class="price"><i class="fas fa-envelope"></i></h3>
+        <div class="content">
+            
+            <a href="#" class="title">Circulars and Updates</a>
+            <p>Information</p>
+            <div class="info">
+                <h3> <i class="far fa-clock"></i>  </h3>
+                <h3> <i class="far fa-calendar-alt"></i> </h3>
+                <h3> <i class="fas fa-book"></i>  </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="images/cbse.webp" alt="">
+        <h3 class="price">CBSE</h3>
+        <div class="content">
+            
+            <a href="#" class="title">CBSE DOE & Circulars</a>
+            <p>information</p>
+            <div class="info">
+                <h3> <i class="far fa-clock"></i></h3>
+                <h3> <i class="far fa-calendar-alt"></i>  </h3>
+                <h3> <i class="fas fa-book"></i> </h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- course section ends -->
+
+<!-- teacher section starts  -->
+
+<section class="teacher" id="teacher">
+
+<h1 class="heading">Admission</h1>
+
+<p>Admission form</p>
+
+<a href="#"><button class="btn">Click to apply</button></a>
+
+</section>
+
+<!-- teacher section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"><div class="image"><img src="images/contact-img.png" alt=""> contact us</h1></div>
+
+<div class="row">
+
+    <form action="https://formsubmit.co/tasumrocky@gmail.com" method="POST">
+        <input type="text" placeholder="full name" class="box" required>
+        <input type="email" placeholder="your email" class="box" required>
+        <input type="password" placeholder="your password" class="box" required>
+        <input type="number" placeholder="phone number" class="box" required>
+        <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="Message"></textarea>
+        <input type="submit" class="btn" value="send now">
+    </form>
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+    
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Languages</h3>
+            <a href="#">Adi</a>
+            <a href="#">Hindi</a>
+            <a href="#">English</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#welcome">home</a>
+            <a href="#about">about</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map-marker-alt"></i> Mebo, Arunachal Pradesh, India 791104. </p>
+            <p> <i class="fas fa-envelope"></i> principal@school.com </p>
+            <p> <i class="fas fa-phone"></i> +91 XXXXXXXXXX </p>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> <a href="#">Mebo School 101</a> all rights reserved. </h1>
+
+</div>
+
+<!-- footer section ends -->
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>

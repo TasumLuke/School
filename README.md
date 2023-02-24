@@ -32,3 +32,7 @@ Fork this repository to your own GitHub account.
 - Make changes and commit them (git commit -am 'Added a new feature').
 - Push changes to your branch (git push origin new-feature).
 - Create a pull request to merge your changes into the main repository.
+
+# Author
+
+Rimmo Loyi Lego
